@@ -14,7 +14,7 @@
             --color-teal-500: rgba(33, 128, 141, 1);
             --color-teal-600: rgba(29, 116, 128, 1);
             --color-brown-600-rgb: 94, 82, 64;
-            
+
             --color-background: var(--color-cream-50);
             --color-surface: var(--color-cream-100);
             --color-text: var(--color-slate-900);
@@ -23,7 +23,7 @@
             --color-primary-hover: var(--color-teal-600);
             --color-border: rgba(var(--color-brown-600-rgb), 0.2);
             --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
-            
+
             --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             --space-8: 8px;
             --space-12: 12px;
@@ -47,8 +47,7 @@
                 --color-gray-400-rgb: 119, 124, 124;
                 --color-teal-300: rgba(50, 184, 198, 1);
                 --color-teal-400: rgba(45, 166, 178, 1);
-        
-                /* Fundo mais claro para os textos */
+
                 --color-background: var(--color-charcoal-800);
                 --color-surface: rgba(48, 51, 52, 1);
                 --color-text: var(--color-gray-200);
@@ -59,7 +58,6 @@
                 --color-card-border: rgba(var(--color-gray-400-rgb), 0.25);
             }
         }
-
 
         * {
             margin: 0;
@@ -75,7 +73,6 @@
             overflow-x: hidden;
         }
 
-        /* Hero Section */
         .hero {
             min-height: 90vh;
             display: flex;
@@ -174,7 +171,6 @@
             box-shadow: var(--shadow-lg);
         }
 
-        /* About Section */
         .about {
             max-width: 1200px;
             margin: 80px auto;
@@ -196,7 +192,6 @@
             line-height: 1.8;
         }
 
-        /* Research Section */
         .research-section {
             max-width: 1400px;
             margin: 80px auto;
@@ -341,54 +336,19 @@
             margin-bottom: 0;
         }
 
-        /* Custom scrollbar for research text */
         .research-full-text::-webkit-scrollbar {
             width: 8px;
         }
-
         .research-full-text::-webkit-scrollbar-track {
             background: rgba(0, 0, 0, 0.05);
             border-radius: 4px;
         }
-
         .research-full-text::-webkit-scrollbar-thumb {
             background: var(--color-primary);
             border-radius: 4px;
         }
-
         .research-full-text::-webkit-scrollbar-thumb:hover {
             background: var(--color-primary-hover);
-        }
-
-        .key-points {
-            margin-top: var(--space-24);
-        }
-
-        .key-points h4 {
-            font-size: 1.1rem;
-            margin-bottom: var(--space-12);
-            color: var(--color-text);
-        }
-
-        .key-points ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .key-points li {
-            padding: var(--space-8) 0;
-            padding-left: 28px;
-            position: relative;
-            color: var(--color-text-secondary);
-            line-height: 1.6;
-        }
-
-        .key-points li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--card-color);
-            font-weight: bold;
         }
 
         .expand-indicator {
@@ -407,7 +367,6 @@
             content: ' ▼';
         }
 
-        /* Footer */
         .footer {
             background-color: var(--color-surface);
             border-top: 1px solid var(--color-border);
@@ -434,7 +393,6 @@
             font-size: 1rem;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .hero {
                 min-height: 80vh;
@@ -456,43 +414,9 @@
             }
         }
 
-        /* Scroll behavior */
         html {
             scroll-behavior: smooth;
         }
-        /* 🔧 Ajustes para celular */
-    @media (max-width: 768px) {
-      .hero {
-        padding: var(--space-16);
-        min-height: 70vh;
-      }
-    
-      .hero h1 {
-        font-size: 2rem;
-      }
-    
-      .hero p {
-        font-size: 1rem;
-      }
-    
-      .research-grid {
-        grid-template-columns: 1fr; /* Cada card ocupa a tela toda */
-      }
-    
-      .research-card {
-        margin-bottom: var(--space-24);
-      }
-    
-      .research-full-text h4 {
-        font-size: 1.4rem; /* Reduz um pouco nos celulares */
-      }
-    
-      .cta-button {
-        padding: var(--space-12) var(--space-24);
-        font-size: 1rem;
-      }
-    }
-
     </style>
 </head>
 <body>
@@ -526,11 +450,15 @@
                     </div>
                     <div class="research-full-text">
                         <h4>Pesquisa</h4>
-                        <p>A educação climática é essencial para formar cidadãos conscientes e engajados na luta contra as mudanças climáticas. Ela promove o entendimento sobre causas, impactos e soluções para os problemas ambientais, incentivando atitudes sustentáveis no cotidiano. No Brasil, a Lei nº 14.926/2024 tornou obrigatória a inclusão de temas climáticos no currículo escolar, fortalecendo a formação ambiental desde cedo. Projetos como o CNEC Cidadania mostram como escolas podem ser centros de transformação, envolvendo alunos em ações práticas ligadas aos Objetivos de Desenvolvimento Sustentável (ODS), especialmente o ODS 13. Além de informar, a educação climática desenvolve empatia, responsabilidade e capacidade de adaptação, tornando-se um pilar fundamental para construir um futuro mais justo e sustentável.</p>
-                        <p>A educação climática também contribui para o desenvolvimento de competências socioemocionais, como empatia, responsabilidade e colaboração. Ao entender os impactos das ações humanas no planeta, os alunos são estimulados a adotar atitudes sustentáveis em seu cotidiano, como reduzir o consumo de energia, reciclar resíduos e preservar recursos naturais.</p>
-                        <p>Portanto, investir em educação climática é investir no futuro. É preparar cidadãos capazes de tomar decisões informadas, participar ativamente da construção de políticas públicas e liderar iniciativas que promovam a justiça climática e a equidade socioambiental.</p>
-                        <p>A sustentabilidade não se alcança apenas com tecnologias verdes ou políticas ambientais, mas com uma mudança profunda de mentalidade — e essa mudança começa na sala de aula.</p>
-                        <p><strong>Resumindo:</strong> A educação climática é fundamental para formar cidadãos conscientes e engajados na luta contra as mudanças climáticas. No Brasil, a Lei nº 14.926/2024 tornou obrigatória sua inclusão no currículo escolar, promovendo desde cedo o entendimento sobre causas, impactos e soluções ambientais. Iniciativas como o projeto CNEC Cidadania mostram como escolas podem ser agentes de transformação, alinhadas aos Objetivos de Desenvolvimento Sustentável, especialmente o ODS 13. Além de informar, essa educação desenvolve competências socioemocionais como empatia, responsabilidade e colaboração, incentivando atitudes sustentáveis no cotidiano. Investir em educação climática é investir em um futuro mais justo, com cidadãos preparados para tomar decisões conscientes e liderar ações pela justiça socioambiental. A verdadeira sustentabilidade começa com a mudança de mentalidade — e essa mudança começa na sala de aula.</p>
+                        <p>A educação climática tem um papel fundamental na construção de um futuro mais consciente e sustentável. Mais do que falar sobre meio ambiente, ela ajuda a formar cidadãos capazes de entender as causas e os impactos das mudanças climáticas, além de incentivar atitudes responsáveis no dia a dia.</p>
+                        <p>No Brasil, esse tema ganhou mais força com a Lei nº 14.926, de 2024, que tornou obrigatória a inclusão dos assuntos climáticos no currículo escolar. Essa lei é um grande avanço, porque reconhece que o combate à crise climática começa na escola — com a formação de alunos que compreendem a importância de cuidar do planeta e sabem agir de forma sustentável.</p>
+                        <p>Um exemplo inspirador é o projeto CNEC Cidadania, que mostra como a escola pode ser um espaço de transformação. Nesse projeto, os alunos participam de ações ligadas aos Objetivos de Desenvolvimento Sustentável da ONU, especialmente o ODS 13, que trata da ação contra a mudança global do clima. A ideia é unir teoria e prática: os estudantes aprendem sobre sustentabilidade e, ao mesmo tempo, aplicam esse conhecimento em atividades que fazem diferença na comunidade.</p>
+                        <p>Mas a educação climática não trata só de números, estatísticas ou conceitos científicos. Ela também trabalha o lado humano — desenvolvendo competências socioemocionais, como empatia, responsabilidade e colaboração. Quando o aluno entende que suas ações têm impacto no meio ambiente, ele passa a agir com mais consciência e respeito, percebendo que pequenas atitudes podem gerar grandes resultados coletivos.</p>
+                        <p>Essas atitudes podem parecer simples, mas fazem muita diferença: reduzir o consumo de energia, evitar o desperdício de água, separar o lixo para reciclagem, repensar o consumo… tudo isso contribui para criar uma cultura de sustentabilidade dentro e fora da escola. E o mais importante: quando os jovens aprendem esses valores desde cedo, eles se tornam multiplicadores — levam o que aprenderam para casa, para a comunidade e até para o futuro ambiente de trabalho.</p>
+                         <p>A educação climática também tem um papel importante na formação de cidadãos críticos e participativos. Ela estimula o pensamento reflexivo e o engajamento social, preparando as novas gerações para cobrar políticas públicas, participar de projetos ambientais e propor soluções inovadoras. Em outras palavras, educar para o clima é formar líderes capazes de promover justiça climática e equidade socioambiental.</p>
+                         <p>E aqui vale lembrar um ponto essencial: a sustentabilidade não se alcança apenas com tecnologia verde ou com boas leis ambientais. Essas ferramentas são fundamentais, mas sozinhas não bastam. É preciso uma mudança de mentalidade — e essa mudança começa na sala de aula. É ali que os alunos aprendem que cuidar do meio ambiente não é uma obrigação distante, e sim uma atitude diária, ligada diretamente à qualidade de vida, à economia e ao futuro das próximas gerações.</p>
+
+                        <p><strong>Resumindo:</strong> A educação climática nos ensina que a transformação começa pelas pessoas. Quando entendemos o impacto das nossas escolhas e agimos com responsabilidade, damos um passo importante para um mundo mais justo, equilibrado e sustentável. Afinal, educar para o clima é educar para a vida.</p>
                     </div>
                 </div>
                 <div class="expand-indicator">Clique para ver mais</div>
@@ -547,9 +475,14 @@
                     </div>
                     <div class="research-full-text">
                         <h4>Pesquisa</h4>
-                        <p>A educação climática ocupa um papel estratégico na Agenda 2030 da ONU, sendo fundamental para alcançar o Objetivo de Desenvolvimento Sustentável 13, que trata da ação contra a mudança global do clima. Mais do que transmitir conhecimento técnico sobre o aquecimento global, essa abordagem educativa busca formar cidadãos conscientes, críticos e engajados na construção de um futuro sustentável. Ao integrar temas como justiça climática, consumo responsável, biodiversidade e energias renováveis nos currículos escolares e nas práticas pedagógicas, a educação climática promove uma transformação cultural que valoriza o cuidado com o planeta e com as gerações futuras.</p>
-                        <p>Além disso, ela dialoga com outros ODS, como o ODS 4 (educação de qualidade), o ODS 12 (consumo e produção responsáveis) e o ODS 15 (vida terrestre), reforçando a interdependência entre educação, meio ambiente e desenvolvimento social. Através de projetos interdisciplinares, ações comunitárias, campanhas de conscientização e uso de tecnologias educacionais, a educação climática estimula a participação ativa dos jovens e das comunidades na busca por soluções locais e globais para os desafios ambientais.</p>
-                        <p>Assim, ela se consolida como uma ferramenta poderosa para promover mudanças de comportamento, fortalecer políticas públicas e garantir um futuro mais justo, resiliente e sustentável para todos.</p>
+                        <p>A educação climática é uma ferramenta essencial para transformar informação em ação concreta. Inserida na Agenda 2030 da ONU, ela ultrapassa o conteúdo escolar tradicional ao servir como eixo transversal capaz de preparar cidadãos, comunidades e instituições para compreender riscos, adaptar-se às mudanças e promover modelos de desenvolvimento compatíveis com os limites do planeta.</p>
+                        <p>No contexto da Agenda 2030, a educação aparece como catalisadora das metas de desenvolvimento sustentável, porque qualifica a sociedade para identificar causas e consequências das mudanças climáticas, questionar padrões de consumo e propor soluções locais e globais. Ao integrar conhecimentos científicos e saberes locais, a educação climática fortalece a capacidade de resposta frente a eventos extremos e contribui tanto para mitigação de emissões quanto para adaptação às novas condições ambientais.</p>
+                        <p>A importância da educação climática se expressa em várias frentes: forma cidadãos críticos capazes de participar de decisões públicas; reduz vulnerabilidades ao promover preparação comunitária; e estimula transformações em setores-chave como energia, transporte e agricultura por meio da inovação e de mudanças de comportamento. Além disso, promove justiça intergeracional e social ao aumentar a conscientização sobre equidade climática e direitos humanos ligados ao uso dos recursos naturais.</p>
+                        <p>Entre os objetivos práticos relacionados à Agenda 2030 está a inclusão da temática climática em currículos formais e não formais, assegurando acesso equitativo e sensível às realidades regionais. Espera-se também desenvolver competências para a sustentabilidade — pensamento sistêmico, resolução de problemas, colaboração e participação democrática — e monitorar os impactos educacionais sobre comportamentos, políticas públicas e indicadores ambientais.</p>
+                        <p>Para implementar essas metas, são necessárias estratégias integradas: currículos articulados que tratem o clima de forma transversal; formação continuada de professores em ciência climática e metodologias participativas; e metodologias de aprendizagem ativa, como projetos comunitários, hortas escolares e monitoramento local do clima. Parcerias entre governos, universidades, setor privado, organizações da sociedade civil e povos tradicionais são fundamentais para co-criar materiais e políticas contextualizadas.</p>
+                        <p>É imprescindível estabelecer mecanismos de avaliação e adaptação contínua das iniciativas educativas, com indicadores claros de progresso que permitam ajustar ações conforme os resultados e as especificidades regionais. A articulação entre educação e políticas públicas aumenta a eficácia das medidas de mitigação e adaptação e assegura que o conhecimento gerado se traduza em práticas sustentáveis de largo alcance.</p>
+                        <p>Investir em educação climática dentro da Agenda 2030 é, acima de tudo, investir em resiliência, inovação e justiça. Ao formar pessoas informadas, críticas e engajadas, cria-se uma base social capaz de transformar escolhas cotidianas e decisões políticas, abrindo caminho para um futuro sustentável em que preservação ambiental e bem-estar coletivo caminhem lado a lado.</p>
+
                         <p><strong>Resumindo:</strong> A educação climática é um componente essencial da Agenda 2030 da ONU, pois capacita indivíduos e comunidades a compreenderem os impactos das mudanças climáticas e a adotarem atitudes sustentáveis. Integrada especialmente ao Objetivo de Desenvolvimento Sustentável 13 (Ação Contra a Mudança Global do Clima), ela promove o desenvolvimento de competências críticas, como pensamento sistêmico, responsabilidade ambiental e participação cidadã. Ao ser incorporada nos currículos escolares, políticas públicas e ações comunitárias, a educação climática contribui para a construção de uma sociedade mais consciente, resiliente e comprometida com a preservação do planeta para as futuras gerações.</p>
                     </div>
                 </div>
@@ -567,15 +500,14 @@
                     </div>
                     <div class="research-full-text">
                         <h4>Pesquisa</h4>
-                        <p>A cultura deixa de ser mera expressão estética para assumir papel central na resposta à crise climática: ela preserva memórias, transmite saberes, organiza redes de solidariedade e produz práticas cotidianas que aumentam a resiliência de comunidades frente a desastres ambientais. Essa visão atravessa os três textos base — Nexo Jornal, JOTA e Belas Artes — e permite articular argumentos práticos e normativos sobre por que cultura e sustentabilidade devem caminhar juntas.</p>
-                        <p>Primeiro, a dimensão material da cultura expõe tanto sua vulnerabilidade quanto sua capacidade de resposta. As enchentes no Rio Grande do Sul em 2024, que atingiram mais de 60 instituições culturais — museus, centros e bibliotecas — deixam claro que políticas climáticas precisam olhar para o setor cultural não só como ameaça a bens simbólicos, mas como parte da infraestrutura social. Esses espaços, quando preservados e apoiados, funcionam como pontos de acolhimento, logística e reconstrução de laços comunitários em momentos de crise, oferecendo abrigo, alimentação e suporte emocional.</p>
-                        <p>Em segundo lugar, os saberes tradicionais e indígenas aparecem como fonte concreta de conhecimento adaptativo. Pesquisas e publicações que reúnem práticas do Alto Rio Negro mostram que conhecimentos ancestrais contêm regras de manejo do território, técnicas de conservação e formas de convivência com eventos climáticos extremos que são, muitas vezes, mais eficazes em contextos locais do que soluções importadas. Valorizar esses saberes exige não apenas reconhecimento simbólico, mas espaços de participação real e financiamento para fortalecer iniciativas lideradas por comunidades.</p>
-                        <p>A educação ambiental e a chamada alfabetização climática são a terceira interface prática entre cultura e sustentabilidade. Projetos culturais que empregam mídias digitais, narrativas audiovisuais e programação comunitária — como as iniciativas citadas no JOTA e exemplos de atuação da organização Demà — têm potencial para traduzir conhecimentos científicos, criar empatia e mobilizar comportamentos. A cultura atua aí como pedagogo informal: transforma informações em narrativas significativas que facilitam a adoção de práticas sustentáveis no cotidiano.</p>
-                        <p>No plano das políticas públicas, incluir a cultura nas Contribuições Nacionalmente Determinadas (NDCs) e em agendas climáticas internacionais traduz um entendimento estratégico: mitigação e adaptação ganham escala quando incorporam dimensões simbólicas, educativas e de coesão social. A proposta de inserir cultura nas NDCs, defendida em fóruns internacionais, exige mecanismos de financiamento acessíveis, articulação intersetorial e indicadores que capturem impactos sociais e culturais das ações climáticas.</p>
-                        <p>Práticas culturais locais e iniciativas inovadoras mostram caminhos concretos de ação. Projetos como o Tecnobarca e o Observatório dos Territórios Sustentáveis da Bocaina demonstram que integrar arte, ciência e saberes locais pode gerar soluções adaptadas a ambientes ribeirinhos e territoriais variados. Festivais, oficinas e residências artísticas podem ser calibrados para promover consumo responsável, manejo de recursos e economia circular em escala comunitária, transformando hábitos sem apagar sentidos culturais.</p>
-                        <p>Para que a cultura cumpra esse papel é necessário enfrentar desafios estruturais: garantir financiamento contínuo e acessível; reconhecer e fortalecer lideranças locais e indígenas; incluir representantes culturais nas instâncias de decisão das políticas climáticas; e desenvolver métricas que valorizem resultados intangíveis, como fortalecimento de redes sociais e manutenção de saberes tradicionais. Sem esses elementos, iniciativas ficam fragmentadas e dependentes de voluntarismo ou de projetos pontuais.</p>
-                        <p>Em síntese, a cultura oferece instrumentos simbólicos e práticos para a transição ecológica. Ela preserva memórias que orientam reconstruções, propaga saberes que orientam práticas adaptativas, e cria narrativas que mobilizam comportamentos coletivos. Integrar cultura e sustentabilidade não é um acréscimo ornamental à agenda climática; é ampliar as ferramentas da política ambiental para torná-la mais eficaz, justa e enraizada nas realidades locais.</p>
-                        <p><strong>Cultura e Clima: Um Ensaio sobre Resistência e Transformação</strong> - O texto do Nexo Jornal aborda como a cultura pode ser uma aliada estratégica no enfrentamento das mudanças climáticas, especialmente em contextos de desastres ambientais como as enchentes que atingiram o Rio Grande do Sul em 2024.</p>
+                        <p>A cultura deixou de ser apenas uma forma de expressão artística e passou a ter um papel central no enfrentamento da crise climática. Ela preserva memórias, compartilha saberes, fortalece redes de solidariedade e cria práticas cotidianas que aumentam a resiliência das comunidades diante de desastres ambientais.</p>
+                        <p><strong>Os três textos base — do Nexo Jornal, do JOTA e da Belas Artes — mostram que cultura e sustentabilidade precisam caminhar juntas.</strong></p>
+                        <p>Em primeiro lugar, o setor cultural é tanto vulnerável quanto essencial em situações de crise. As enchentes no Rio Grande do Sul, em 2024, atingiram dezenas de museus e bibliotecas, evidenciando que políticas climáticas não podem tratar a cultura apenas como algo simbólico. Esses espaços, quando preservados, funcionam como locais de acolhimento e reconstrução social — oferecendo abrigo, alimentação e apoio emocional.</p>
+                        <p>Além disso, os saberes tradicionais e indígenas trazem lições valiosas de adaptação. Estudos no Alto Rio Negro mostram que essas comunidades já possuem técnicas sustentáveis de manejo e convivência com o clima, muitas vezes mais eficazes que soluções externas. Valorizar esses conhecimentos significa garantir espaços de participação e financiamento para iniciativas locais.</p>
+                        <p>A educação ambiental também é um elo importante entre cultura e sustentabilidade. Projetos culturais que usam mídias digitais, filmes e ações comunitárias ajudam a traduzir a ciência em narrativas acessíveis e emocionais, despertando empatia e incentivando comportamentos sustentáveis. A cultura, nesse sentido, funciona como uma educadora informal da sociedade.</p>
+                        <p>No campo das políticas públicas, incluir a cultura nas metas climáticas internacionais — como nas chamadas NDCs — é reconhecer que a luta contra a crise climática depende não só de tecnologia, mas também de engajamento social, educação e pertencimento cultural.</p>
+                        <p>Existem exemplos práticos disso. Projetos como o Tecnobarca e o Observatório dos Territórios Sustentáveis da Bocaina mostram como arte, ciência e saberes locais podem se unir para gerar soluções adaptadas a diferentes realidades.</p>
+                        <p>Porém, para que tudo isso funcione, é preciso enfrentar desafios: garantir financiamento contínuo, fortalecer lideranças locais e indígenas, incluir o setor cultural nas decisões climáticas e criar métricas que valorizem os resultados sociais e simbólicos dessas ações.</p>
                         <p><strong>Dados e Destaques do Ensaio:</strong> Mais de 60 instituições culturais foram afetadas pelas enchentes no RS, incluindo museus, bibliotecas e centros comunitários. Espaços culturais atuaram como pontos de acolhimento, oferecendo abrigo, alimentação e suporte emocional às vítimas. Saberes indígenas e tradicionais são valorizados como fontes de conhecimento climático. Um exemplo é o artigo publicado na revista Science por pesquisadores indígenas do Alto Rio Negro, que reúne práticas ancestrais de cuidado com o território. Projetos inovadores como o Tecnobarca, que leva arte e ciência a comunidades ribeirinhas, e o Observatório dos Territórios Sustentáveis da Bocaina, mostram como cultura e sustentabilidade podem caminhar juntas. O texto defende que políticas climáticas devem incluir o setor cultural, com financiamento adequado, participação comunitária e valorização da diversidade.</p>
                     </div>
                 </div>
@@ -593,11 +525,44 @@
                     </div>
                     <div class="research-full-text">
                         <h4>Pesquisa</h4>
-                        <p><strong>Alimentação e agricultura:</strong> O clima determina quais o que pode ser cultivado em uma região, influenciando a dieta local. Fatores como temperatura e umidade definem a viabilidade de plantações. O estudo do clima em relação à produção agrícola busca adaptar as condições ambientais para melhor produtividade.</p>
-                        <p><strong>Habitação:</strong> A arquitetura se adapta ao clima local. Em regiões quentes, casas são construídas com ventilação natural e materiais que minimizam o calor, enquanto em climas frios, a prioridade é o isolamento térmico e a proteção contra a neve.</p>
-                        <p><strong>Vestuário:</strong> As roupas são uma resposta direta às condições climáticas. Em climas frios, predominam tecidos pesados e roupas de várias camadas. Já em climas quentes, as pessoas optam por tecidos leves e soltos. As mudanças climáticas têm até mesmo afetado a indústria da moda, com coleções de inverno em baixas temperaturas.</p>
-                        <p><strong>Saúde:</strong> As pessoas que vivem em climas frios tendem a ter uma maior tolerância ao frio. No entanto, a adaptação ao frio pode torná-los menos tolerantes a temperaturas altas. Em contrapartida, aqueles que vivem em climas quentes desenvolvem maior tolerância ao calor. Porém, o resfriamento pode vir com uma menor tolerância ao frio. Essas tolerâncias opostas demonstram que, dependendo do clima, até a maneira em como nosso corpo se molda ao ambiente muda em culturas diferentes.</p>
-                        <p><strong>Mitos e crenças:</strong> A natureza e o clima estão influenciam muitas mitológias e crenças. Diversas culturas antigas atribuíam divindades a fenômenos como a chuva, o sol e o vento, buscando explicar e controlar os elementos da natureza. Isso tudo pode variar dependendo de qual seja o clima predominante no local.</p>
+                        <p>O clima molda profundamente a alimentação e a agricultura de cada região, determinando o que pode ser cultivado e, por consequência, a dieta local. Temperatura, precipitação e umidade definem a viabilidade de culturas e orientam práticas agrícolas; por isso o estudo das condições climáticas busca adaptar técnicas e calendários para melhorar produtividade e sustentabilidade.</p>
+                        <p>A habitação também reflete essa relação: a arquitetura se ajusta ao clima para garantir conforto e segurança. Em regiões quentes privilegia‑se ventilação natural, sombreamento e materiais que reduzem o calor; em climas frios, o foco é o isolamento térmico, o aproveitamento de calor e a proteção contra neve e ventos fortes.</p>
+                        <p>O vestuário é uma resposta imediata às condições ambientais. Em lugares mais frios predominam tecidos pesados e roupas em camadas para reter calor; em regiões quentes, opta‑se por tecidos leves e cortes soltos que facilitam a dissipação térmica. Mudanças climáticas têm até impacto na indústria da moda, que precisa rever coleções e materiais para novas realidades térmicas.</p>
+                        <p>A saúde e a fisiologia humana também são afetadas pelo clima: populações expostas por longos períodos ao frio tendem a desenvolver maior tolerância a baixas temperaturas e menor resistência a calor intenso, enquanto quem vive em climas quentes adapta‑se ao calor, ficando mais sensível ao frio. Essas diferenças mostram como o corpo e as práticas culturais se moldam ao ambiente.</p>
+                        <p>Por fim, clima e natureza alimentam mitos, crenças e cosmologias. Muitas culturas atribuíram divindades ou significados a fenômenos como chuva, sol e vento, usando essas narrativas para explicar, ritualizar e, de certa forma, tentar controlar o ambiente. Essas tradições variam conforme o clima predominante e ilustram a profunda conexão entre meio ambiente e identidade cultural.</p>
+                    </div>
+                </div>
+                <div class="expand-indicator">Clique para ver mais</div>
+            </div>
+
+            <!-- Research Card 5: Integração de Saberes -->
+            <div class="research-card" style="--card-color: #00b686; --icon-bg: rgba(0,182,134,0.10);" data-researcher="integracao">
+                <div class="card-icon">🔗</div>
+                <h3 class="research-theme">Integração entre Saberes Científicos e Tradicionais</h3>
+                <p class="research-summary">
+                    A integração entre saberes científicos e tradicionais promove um diálogo fecundo e soluções inovadoras em educação, saúde e sustentabilidade.
+                </p>
+                <div class="research-details">
+                    <div class="research-highlight">
+                        "Construir pontes de respeito e aprender reciprocamente enriquece soluções e amplia a justiça cultural."
+                    </div>
+                    <div class="research-full-text">
+                        <h4>Pesquisa</h4>
+                        <p>
+                            A integração entre saberes científicos e tradicionais promove um diálogo fecundo entre diferentes formas de conhecimento, sobretudo nas áreas da educação, saúde e sustentabilidade. Em vez de competir, esses saberes se complementam: o conhecimento acadêmico oferece métodos sistemáticos de investigação, enquanto o conhecimento popular ou ancestral traz experiência prática, vínculo com o território e sentido cultural.
+                        </p>
+                        <p>
+                            Por saberes científicos entenda-se conhecimentos construídos por meio de observação, experimentação e validação, transmitidos em instituições formais como escolas e universidades. Por saberes tradicionais compreendem-se práticas e saberes acumulados por comunidades ao longo de gerações, frequentemente repassados oralmente e incorporados à rotina e à identidade local.
+                        </p>
+                        <p>
+                            Integrar essas formas de saber é importante por várias razões. Primeiro, valoriza a diversidade epistemológica, reconhecendo múltiplas maneiras legítimas de interpretar o mundo. Segundo, respeita culturas locais — uma demanda central em contextos indígenas, quilombolas e ribeirinhos. Terceiro, favorece soluções mais adequadas e sustentáveis, já que práticas locais testadas no tempo podem se combinar com tecnologias modernas para resultados mais eficientes. Quarto, torna a educação mais significativa, porque conteúdos que dialogam com a realidade dos estudantes aumentam o engajamento e a relevância do aprendizado.
+                        </p>
+                        <p>
+                            Na prática, essa integração já se manifesta em iniciativas concretas: estudos científicos que investigam e validam o uso de plantas medicinais para práticas de saúde integrativa; a adoção de técnicas tradicionais de manejo de solo e sementes aliadas a inovações agronômicas para incrementar produtividade de forma sustentável; e projetos escolares interdisciplinares que articulam currículo e saberes locais, fortalecendo identidade e vínculo comunitário.
+                        </p>
+                        <p>
+                            Integrar saberes não significa substituir um pelo outro, mas construir pontes baseadas no respeito mútuo, na validação conjunta e na vontade de aprender reciprocamente. Esse caminho amplia a justiça cultural, enriquece práticas profissionais e educativas e contribui para soluções mais justas, pluralistas e sustentáveis.
+                        </p>
                     </div>
                 </div>
                 <div class="expand-indicator">Clique para ver mais</div>
@@ -648,10 +613,10 @@
                         otherCard.classList.remove('expanded');
                     }
                 });
-                
+
                 // Toggle current card
                 card.classList.toggle('expanded');
-                
+
                 // Smooth scroll to card if expanding
                 if (card.classList.contains('expanded')) {
                     setTimeout(() => {
